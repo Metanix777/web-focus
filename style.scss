@@ -1,0 +1,80 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;;
+}
+
+@mixin comissioner-500 {
+    font: {
+        family: Commissioner;
+        style: normal;
+        weight: 500;
+        size: 14px;
+    }
+    line-height: 20px;
+
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.75);
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    max-width: 1215px;
+    height: 150px;
+    margin: 0 auto;
+
+
+    &__top-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+
+        .header__contacts {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            span {
+                color: #0005;
+                padding-right: 15px;
+                padding-left: 15px;
+            }
+
+            img:nth-child(n+2) {
+                padding-left: 10px;
+            }
+        }
+    }
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .menu {
+            display: flex;
+            justify-content: space-between;
+            
+
+            .list {
+                display: flex;
+                justify-content: space-between;
+                width: 740px;
+    
+                &__item {
+                    list-style-type: none;
+                    
+                    &_link {
+                        @include comissioner-500();
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
