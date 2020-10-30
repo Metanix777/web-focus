@@ -1,10 +1,7 @@
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;;
-}
+$light: #FFFFFF;
+$accent: #DEC377;
 
-@mixin comissioner-500 {
+@mixin comissioner-14 {
     font: {
         family: Commissioner;
         style: normal;
@@ -18,14 +15,97 @@
     color: rgba(0, 0, 0, 0.75);
 }
 
-.header {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    max-width: 1215px;
-    height: 150px;
-    margin: 0 auto;
+@mixin h1-style{
+    font: {
+        family: Commissioner;
+        size: 40px;
+        style: normal;
+        weight: 400;
+    }
+    line-height: 50px;
+    letter-spacing: 0.01em;
+    color: rgba(0, 0, 0, 0.9);
+}
 
+h2 {
+    font: {
+        family: Commissioner;
+        size: 28px;
+        style: normal;
+        weight: 400;
+    }
+    line-height: 40px;
+    letter-spacing: 0.03em;
+}
+
+h5 {
+    font: {
+        family: Commissioner;
+        size: 20px;
+        style: normal;
+        weight: 400;
+    }
+    line-height: 30px;
+    letter-spacing: 0em;
+}
+
+@mixin main-text {
+    font: {
+        family: Lato, sans-serif;
+        size: 15px;
+        style: normal;
+        weight: 300;
+    }
+    line-height: 25px;
+    letter-spacing: 0em;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+@mixin button-text {
+    font: {
+        family: Lato;
+        size: 12px;
+        style: normal;
+        weight: 600;
+    }
+    line-height: 20px;
+    letter-spacing: 0.02em;
+}
+
+@mixin button {
+    background: $accent;
+    color: $light;
+    text-transform: uppercase;
+    width: 200px;
+    height: 45px;
+    margin-top: 50px;
+    border: none;
+    border-radius: 2px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;;
+}
+
+body {
+    background: #E5E5E5;
+    width: 1920px;
+}
+
+.header {
+    background: #fff;
+    height: 150px;
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        max-width: 1232px;
+        height: 100%;
+        margin-left: 375px;
+    }
 
     &__top-content {
         display: flex;
@@ -69,7 +149,7 @@
                     list-style-type: none;
                     
                     &_link {
-                        @include comissioner-500();
+                        @include comissioner-14();
                         text-decoration: none;
                     }
                 }
@@ -77,4 +157,176 @@
         }
     }
 }
+
+.main {
+    &-screen {
+        &__slider {
+            position: absolute;
+            height: 650px;
+            top: 150px;
+            left: 0;
+            z-index: -1;
+        }
+
+        &__content {
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            width: 500px;
+            height: 240px;
+            margin-top: 160px;
+        }
+
+        &__title {
+            @include h1-style();
+        }
+
+        &__subtitle {
+            @include main-text();
+            margin-top: 20px;
+        }
+
+        &__button {
+            @include button();
+        }
+    }
+
+    .arrows {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 120px;
+        height: 60px;
+        margin-top: 90px;
+
+        &__item:hover {
+            cursor: pointer;
+            filter: opacity(70%);
+        }
+    }
+
+    .advantages {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10px;
+
+        &__item {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            width: 270px;
+            height: 285px;
+            padding: 40px 20px;
+
+            &_img {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 120px;
+                height: 120px;
+                border: 3px solid rgba(0, 0, 0, 0.1); 
+                border-radius: 50%;
+            }
+
+            &_subtitle {
+                height: 50px;
+
+                font: {
+                    family: "Lato", sans-serif;
+                    size: 16px;
+                    style: normal;
+                    weight: 400;
+                }
+                line-height: 25px;
+                letter-spacing: 0.02em;
+                color: rgba(0, 0, 0, 0.75); 
+                text-align: center;
+                vertical-align: top;
+            }
+        }
+    }
+
+    .introduction {
+        margin-top: 100px;
+
+        &__wrapper {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &__content {
+            padding: 50px 0 0 70px;
+            text-align: left;
+
+            &_title {
+                width: 540px;
+            }
+
+            &_description {
+                width: 470px;
+                
+                p {
+                    @include main-text();
+                    margin-top: 30px;
+                }
+            }
+        }
+    }
+
+    .directions {
+        margin-top: 100px;
+
+        &__list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+            .list__card {
+                display: flex;
+                justify-content: space-between;
+                width: 370px;
+                height: 140px;
+                margin-top: 30px;
+
+                &_content {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    margin: 25px 0 25px 40px;
+                }
+
+                &_link {
+                    @include button-text();
+                    text-decoration: none;
+                    color: rgba(0, 0, 0, 0.5);
+                }
+
+                &_image {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border: 1px solid rgba(0, 0, 0, 0.1); 
+                    border-radius: 50%;
+                    width: 80px;
+                    height: 80px;
+                    margin-top: 15px;
+                    margin-right: 15px;
+                }
+            }
+        }
+    }
+}
+
+
+.wrapper {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+.block_content {
+    background: $light;
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.3);
+}
+
 
