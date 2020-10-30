@@ -315,6 +315,20 @@ body {
                 }
             }
         }
+
+        &__button {
+            @include button();
+            margin-top: 40px;
+        }
+    }
+
+    .direction-principles {
+        &__wrapper {
+            display: flex;
+            align-items: center;
+            width: 1370px;
+            margin: 0 auto;
+        }
     }
 }
 
