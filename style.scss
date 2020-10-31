@@ -1,5 +1,7 @@
 $light: #FFFFFF;
 $accent: #DEC377;
+$accent40: rgba(222, 195, 119, 0.4);
+$accent75: rgba(222, 195, 119, 0.75);
 
 @mixin comissioner-14 {
     font: {
@@ -38,6 +40,27 @@ h2 {
     letter-spacing: 0.03em;
 }
 
+h3 {
+    font: {
+        family: Commissioner;
+        size: 26px;
+        style: normal;
+        weight: 700;
+    }
+    line-height: 40px;
+    letter-spacing: 0.01em;
+}
+
+h4 {
+    font: {
+        family: Commissioner;
+        size: 26px;
+        style: normal;
+        weight: 400;
+    }
+    line-height: 45px;
+}
+
 h5 {
     font: {
         family: Commissioner;
@@ -51,13 +74,12 @@ h5 {
 
 @mixin main-text {
     font: {
-        family: Lato, sans-serif;
+        family: Lato;
         size: 15px;
         style: normal;
         weight: 300;
     }
     line-height: 25px;
-    letter-spacing: 0em;
     color: rgba(0, 0, 0, 0.8);
 }
 
@@ -70,6 +92,9 @@ h5 {
     }
     line-height: 20px;
     letter-spacing: 0.02em;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.5);
+    text-transform: uppercase;
 }
 
 @mixin button {
@@ -78,7 +103,6 @@ h5 {
     text-transform: uppercase;
     width: 200px;
     height: 45px;
-    margin-top: 50px;
     border: none;
     border-radius: 2px;
 }
@@ -86,12 +110,13 @@ h5 {
 * {
     padding: 0;
     margin: 0;
-    box-sizing: border-box;;
+    box-sizing: border-box;
 }
 
 body {
     background: #E5E5E5;
     width: 1920px;
+    margin: 0 auto;
 }
 
 .header {
@@ -164,7 +189,6 @@ body {
             position: absolute;
             height: 650px;
             top: 150px;
-            left: 0;
             z-index: -1;
         }
 
@@ -188,6 +212,7 @@ body {
 
         &__button {
             @include button();
+            margin-top: 50px;
         }
     }
 
@@ -293,13 +318,12 @@ body {
                     display: flex;
                     flex-direction: column;
                     justify-content: space-between;
+                    width: 180px;
                     margin: 25px 0 25px 40px;
                 }
 
                 &_link {
                     @include button-text();
-                    text-decoration: none;
-                    color: rgba(0, 0, 0, 0.5);
                 }
 
                 &_image {
@@ -323,13 +347,317 @@ body {
     }
 
     .direction-principles {
+        margin-top: 100px;
         &__wrapper {
             display: flex;
             align-items: center;
             width: 1370px;
             margin: 0 auto;
         }
+
+        &__content {
+            display: flex;
+        }
+
+        &__description {
+            @include main-text();
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 770px;
+            height: 200px;
+        }
+
+        &__image {
+            margin-top: 60px;
+        }
+
+        &__arrow {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100px;
+            height: 100px;
+            padding-top: calc(820px/3);
+
+            img:hover {
+                filter: opacity(70%);
+            }
+        }
     }
+
+    .background__white {
+        position: absolute;
+        background: $light;
+        height: 1345px;
+        width: 100%;
+        top: 3290px;
+        left: 0;
+        z-index: -1;
+    }
+
+    .reviews {
+        margin-top: 100px;
+
+        &__content {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &__card {
+            display: flex;
+            flex-direction: column;
+            width: 570px;
+            height: 585px;
+            margin-top: 35px;
+
+            &_image {
+                background-image: url(assets/images/review-card.png);
+                height: 100px;
+            }
+
+            &_content {
+                padding: 40px 50px;
+            }
+
+            &_position {
+                @include main-text();
+                color: rgba(0, 0, 0, 0.5);
+                font-weight: 400;
+            }
+
+            &_name {
+                color: $accent;
+            }
+
+            &_description {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                height: 295px;
+                margin-top: 20px;
+
+                p {
+                    @include main-text();
+                    font-size: 14px;
+                    letter-spacing: 0.01em;
+                }
+            }
+
+            &_button {
+                @include button-text();
+            }
+        }
+
+        &__navigation {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            margin-top: 20px;
+            flex-grow: 1;
+
+            &_button {
+                @include button();
+                margin-top: 10px;
+            }
+
+            &_slider {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 50px;
+                height: 60px;
+
+                &-wrapper {
+                    display: flex;
+                    justify-content: center;
+                }
+
+                .slider__link {
+                    background: #0001;
+                    border: none;
+                    border-radius: 50%;
+                    width: 10px;
+                    height: 10px;
+
+                    &_active {
+                        background: $accent;
+                    }
+                }
+            }
+
+            &_arrow {
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                width: 120px;
+                height: 60px;
+
+                &-wrapper {
+                    display: flex;
+                    justify-content: flex-end;
+                }
+            }
+        }
+    }
+
+    .clients {
+        margin-top: 100px;
+
+        &__description {
+            display: flex;
+            p {
+                @include main-text();
+                width: 670px;
+                margin-right: 100px;
+            }
+        }
+
+        &__button {
+            @include button();
+            background: transparent;
+            color: $accent;
+            border: 3px solid $accent;
+        }
+
+        &__logo {
+            display: flex;
+            justify-content: space-between;
+            mix-blend-mode: luminosity;
+            width: 1130px;
+            margin: 40px auto;
+        }
+    }
+
+    .triangle {
+        margin-top: 180px;
+
+        &__wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        &__card {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            width: 570px;
+            height: 305px;
+            padding: 40px 50px;
+
+            p {
+                @include main-text();
+                margin-top: 15px;
+            }
+
+            &:nth-child(2) {
+                &::after {
+                    content: ''; 
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    border: 35px solid transparent; 
+                    border-top: 35px solid $accent; 
+                    border-right: 35px solid $accent;
+                }
+            }
+
+            &:nth-child(3) {
+                flex-direction: row;
+                width: 100%;
+                height: 185px;
+                margin-top: 30px;
+
+                p {
+                    width: 720px;
+                    margin-top: 0;
+                }
+            }
+        }
+    }
+
+    .background__iamge {
+        background: url(assets/images/background-img.png);
+        width: 100%;
+        height: 180px;
+        margin-top: 100px;
+    }
+
+    .services {
+        margin-top: 80px;
+
+        &__cards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-top: 5px;
+
+            &_item {
+                display: flex;
+                background: $light;
+                margin-top: 30px;
+                height: 140px;
+
+                .color-block {
+                    background: $accent;
+                    width: 70px;
+                    height: 100%;
+                }
+
+                .color-accent40 {
+                    background: $accent40;
+                }
+
+                .color-accent75 {
+                    background: $accent75;
+                }
+            }
+
+            .item {
+                &__width-470 {
+                    width: 470px;
+                }
+    
+                &__width-570 {
+                    width: 570px;
+                }
+    
+                &__width-670 {
+                    width: 670px;
+                }
+
+                &__content {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    width: 100%;
+                    padding: 25px 30px 20px 30px;
+
+                    .item__link {
+                        @include button-text();
+                        text-align: right;
+                    }
+                }
+            }
+
+        }
+
+        &__description {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 50px;
+
+            p {
+                @include main-text();
+                width: 770px;
+            }
+        }
+
+        &__button {
+            @include button();
+        }
+    }
+
 }
 
 

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>МК правовые технологии</title>
     <link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/lato" type="text/css"/>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -206,7 +206,9 @@
 
         <section class="direction-principles">
             <div class="direction-principles__wrapper">
-                <img src="assets/icons/arrow-left.png" alt="arrow-left">
+                <div class="direction-principles__arrow">
+                    <img class="arrow-left" src="assets/icons/arrow-left.png" alt="arrow-left">
+                </div>
                 <div class="wrapper">
                     <div class="direction-principles__content">
                         <div class="direction-principles__title">
@@ -221,9 +223,184 @@
                         <img src="assets/images/direction-screen1.png" alt="direction-screen1">
                     </div>
                 </div>
-                <img src="assets/icons/arrow-right.png" alt="arrow-right">
+                <div class="direction-principles__arrow">
+                    <img class="arrow-right" src="assets/icons/arrow-right.png" alt="arrow-right">
+                </div>
             </div>
         </section>
+
+        <div class="background__white block_content"></div>
+
+        <section class="reviews">
+            <div class="wrapper">
+                <div class="reviews__title">
+                    <h2>Отзывы наших партнеров</h2>
+                </div>
+                <div class="reviews__content">
+                    <div class="reviews__card block_content">
+                        <div class="reviews__card_image"></div>
+                        <div class="reviews__card_content">
+                            <div class="reviews__card_position">директор</div>
+                            <h3 class="reviews__card_name">С.В. Косачев</h3>
+                            <div class="reviews__card_description">
+                                <p>Уважаемая Светлана Александровна! Наша компания выражает благодарность и признательность обществу с ограниченной ответственностью «МК-Правовые технологии». Благодаря слаженной работе и высокой квалификации Ваших сотрудников и специалистов компания «ВиваСтрой» получила качественные юридические услуги по взысканию денежных средств с должника. Профессионализм работников ООО «МК-Правовые технологии», а также желание работать со сложными и нестандартными задачами является залогом высокоэффективного и успешного взаимодействия наших компаний. Рекомендуем...</p>
+                                <a class="reviews__card_button" href="#">Читать далее</a>  
+                            </div>  
+                        </div>
+                    </div>
+                    <div class="reviews__card block_content">
+                        <div class="reviews__card_image"></div>
+                        <div class="reviews__card_content">
+                            <div class="reviews__card_position">глава представительства</div>
+                            <h3 class="reviews__card_name">Валерий Мяснянкин</h3>
+                            <div class="reviews__card_description">
+                                <p>Представительство корпорации «VMSN GROUP, INC.» (США) в Республике Беларусь на протяжении нескольких лет сотрудничает с ООО «МК-Правовые технологии» в рамках сопровождения деятельности по юридическим вопросам, в том числе по вопросам ведения кадрового делопроизводства – абонентское обслуживание. Хотелось бы отметить работу специалистов ООО «МК-Правовые технологии» хорошими теплыми словами: надёжные, обязательные, пунктуальные. Вопросы любой сложности им по плечу. Работая с профессионалами МК-Правовые технологии, всегда можно рассчитывать...</p>
+                                <a class="reviews__card_button" href="#">Читать далее</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="reviews__navigation">
+                    <div class="reviews__navigation_button-wrapper">
+                        <button class="reviews__navigation_button">Все отзывы</button>
+                    </div>
+                    <div class="reviews__navigation_slider-wrapper">
+                        <div class="reviews__navigation_slider">
+                            <button class="slider__link slider__link_active"></button>
+                            <button class="slider__link"></button>
+                            <button class="slider__link"></button>
+                        </div>
+                    </div>
+                    <div class="reviews__navigation_arrow-wrapper">
+                        <div class="reviews__navigation_arrow">
+                            <img src="assets/icons/arrow-left.png" alt="arrow-left" class="reviews__navigation_left">
+                            <img src="assets/icons/arrow-right.png" alt="arrow-right" class="reviews__navigation_right">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="clients">
+            <div class="wrapper">
+                <div class="clients__description">
+                    <p> Оказываем юридические услуги юридическим лицам и индивидуальным предпринимателям. Специализируемся в области хозяйственного права, работаем на всей территории Республики Беларусь, а также за ее пределами, с бизнесом любого масштаба.</p>
+                    <button class="clients__button">Наши партнеры</button>
+                </div>
+
+                <div class="clients__logo">
+                    <img src="assets/images/client-bauar.png" alt="БауАренда" class="clients__logo_items">
+                    <img src="assets/images/client-titan.png" alt="Титан" class="clients__logo_items">
+                    <img src="assets/images/client-favorit.png" alt="Фаворит" class="clients__logo_items">
+                    <img src="assets/images/client-ALFA.png" alt="Альфа" class="clients__logo_items">
+                    <img src="assets/images/client-IBA.png" alt="IBA" class="clients__logo_items">
+                </div>
+            </div>
+        </section>
+
+        <section class="triangle">
+            <div class="wrapper">
+                <div class="triangle__wrapper">
+                    <div class="triangle__card block_content">
+                        <h4 class="triangle__card_title">Просто объясним сложные вещи</h4>
+                        <p class="triangle__card_description">В своей практике, мы дотошно соблюдаем законность, учитываем сложившуюся правовую практику и правила юридической этики. Мы считаем, что в поддержке бизнеса важно учитывать конкретные проблемы клиента и строить сотрудничество по принципу тщательного изучения всех нюансов возникшей ситуации. Всегда честны и объективны.</p>
+                    </div>
+                    <div class="triangle__card block_content">
+                        <h4 class="triangle__card_title">Надежно защитим права и интересы</h4>
+                        <p class="triangle__card_description">Заказав комплексные юридические услуги в ООО «МК-Правовые технологии», можно больше не платить зарплату штатному юристу, страховые отчисления и налоги с его доходов. Можно не оплачивать отпуск, больничные и не беспокоиться о нахождении работника на рабочем месте в нужный момент.</p>
+                    </div>
+                    <div class="triangle__card block_content">
+                        <h4 class="triangle__card_title">Вы платите только за результат!</h4>
+                        <p class="triangle__card_description">В своей практике, мы дотошно соблюдаем законность, учитываем сложившуюся правовую практику и правила юридической этики. Мы считаем, что в поддержке бизнеса важно учитывать конкретные проблемы клиента и строить сотрудничество по принципу тщательного изучения всех нюансов возникшей ситуации. Всегда честны и объективны.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="background__iamge block_content"></div>
+        
+        <section class="services">
+            <div class="wrapper">
+                <h2 class="services__title">Перечень оказываемых услуг</h2>
+                <div class="services__cards">
+                    <div class="services__cards_item item__width-470 block_content">
+                        <div class="color-block color-accent40"></div>
+                        <div class="item__content">
+                            <h5 class="item__title">Регистрации ИП и юрлиц</h5>
+                            <a href="" class="item__link">Подробнее</a>
+                        </div>
+                    </div>
+                    <div class="services__cards_item item__width-670 block_content">
+                        <div class="color-block color-accent40"></div>
+                        <div class="item__content">
+                            <h5 class="item__title">Ликвидация, реорганизация и продажа бизнеса</h5>
+                            <a href="" class="item__link">Подробнее</a>
+                        </div>
+                    </div>
+                    <div class="services__cards_item item__width-570 block_content">
+                        <div class="color-block color-accent75"></div>
+                        <div class="item__content">
+                            <h5 class="item__title">Взыскание дебиторской задолженности</h5>
+                            <a href="" class="item__link">Подробнее</a>
+                        </div>
+                    </div>
+                    <div class="services__cards_item item__width-570 block_content">
+                        <div class="color-block color-accent75"></div>
+                        <div class="item__content">
+                            <h5 class="item__title">Письменные и устные консультации</h5>
+                            <a href="" class="item__link">Подробнее</a>
+                        </div>
+                    </div>
+                    <div class="services__cards_item item__width-670 block_content">
+                        <div class="color-block"></div>
+                        <div class="item__content">
+                            <h5 class="item__title">Разработка уставных документов и внесение изменений в них</h5>
+                            <a href="" class="item__link">Подробнее</a>
+                        </div>
+                    </div>
+                    <div class="services__cards_item item__width-470 block_content">
+                        <div class="color-block"></div>
+                        <div class="item__content">
+                            <h5 class="item__title">Ведение переговоров</h5>
+                            <a href="" class="item__link">Подробнее</a>
+                        </div>
+                    </div>
+                    <div class="services__cards_item item__width-570 block_content">
+                        <div class="color-block color-accent75"></div>
+                        <div class="item__content">
+                            <h5 class="item__title">Комплексное сопровождение бизнеса</h5>
+                            <a href="" class="item__link">Подробнее</a>
+                        </div>
+                    </div>
+                    <div class="services__cards_item item__width-570 block_content">
+                        <div class="color-block color-accent75"></div>
+                        <div class="item__content">
+                            <h5 class="item__title">Сопровождение деловых сделок</h5>
+                            <a href="" class="item__link">Подробнее</a>
+                        </div>
+                    </div>
+                    <div class="services__cards_item item__width-470 block_content">
+                        <div class="color-block color-accent40"></div>
+                        <div class="item__content">
+                            <h5 class="item__title">Лицензирование бизнеса</h5>
+                            <a href="" class="item__link">Подробнее</a>
+                        </div>
+                    </div>
+                    <div class="services__cards_item item__width-670 block_content">
+                        <div class="color-block color-accent40"></div>
+                        <div class="item__content">
+                            <h5 class="item__title">Решение правовых споров</h5>
+                            <a href="" class="item__link">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="services__description">
+                    <p>Оказание юридических услуг юридическим лицам и индивидуальным предпринимателям – наша работа. Среди собственников бизнеса принято считать, что прочитать закон в Интернете и применить его на практике - это одно и тоже. Основываясь на этом убеждении, они часто отказываются от профессиональной помощи. Практика же показывает, что только опытный юрист может правильно разобраться в правовых тонкостях, своевременно предотвратить ложные шаги и ускорить получение результата.</p>
+                    <button class="services__button">Все услуги</button>
+                </div>
+            </div>
+        </section>
+
     </main>
     
 </body>
