@@ -181,7 +181,7 @@ body {
 }
 
 .main-screen__subtitle {
-  font-family: Lato;
+  font-family: 'LatoRegular';
   font-size: 15px;
   font-style: normal;
   font-weight: 300;
@@ -268,7 +268,7 @@ body {
 
 .main .advantages__item_subtitle {
   height: 50px;
-  font-family: "Lato", sans-serif;
+  font-family: 'LatoRegular';
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -306,7 +306,7 @@ body {
 }
 
 .main .introduction__content_description p {
-  font-family: Lato;
+  font-family: 'LatoRegular';
   font-size: 15px;
   font-style: normal;
   font-weight: 300;
@@ -358,7 +358,7 @@ body {
 }
 
 .main .directions__list .list__card_link {
-  font-family: Lato;
+  font-family: 'LatoRegular';
   font-size: 12px;
   font-style: normal;
   font-weight: 600;
@@ -420,7 +420,7 @@ body {
 }
 
 .main .direction-principles__description {
-  font-family: Lato;
+  font-family: 'LatoRegular';
   font-size: 15px;
   font-style: normal;
   font-weight: 300;
@@ -510,7 +510,7 @@ body {
 }
 
 .main .reviews__card_position {
-  font-family: Lato;
+  font-family: 'LatoRegular';
   font-size: 15px;
   font-style: normal;
   font-weight: 300;
@@ -540,7 +540,7 @@ body {
 }
 
 .main .reviews__card_description p {
-  font-family: Lato;
+  font-family: 'LatoRegular';
   font-size: 15px;
   font-style: normal;
   font-weight: 300;
@@ -551,7 +551,7 @@ body {
 }
 
 .main .reviews__card_button {
-  font-family: Lato;
+  font-family: 'LatoRegular';
   font-size: 12px;
   font-style: normal;
   font-weight: 600;
@@ -653,7 +653,7 @@ body {
 }
 
 .main .clients__description p {
-  font-family: Lato;
+  font-family: 'LatoRegular';
   font-size: 15px;
   font-style: normal;
   font-weight: 300;
@@ -718,7 +718,7 @@ body {
 }
 
 .main .triangle__card p {
-  font-family: Lato;
+  font-family: 'LatoRegular';
   font-size: 15px;
   font-style: normal;
   font-weight: 300;
@@ -826,7 +826,7 @@ body {
 }
 
 .main .services__cards .item__content .item__link {
-  font-family: Lato;
+  font-family: 'LatoRegular';
   font-size: 12px;
   font-style: normal;
   font-weight: 600;
@@ -849,7 +849,7 @@ body {
 }
 
 .main .services__description p {
-  font-family: Lato;
+  font-family: 'LatoRegular';
   font-size: 15px;
   font-style: normal;
   font-weight: 300;
@@ -859,6 +859,343 @@ body {
 }
 
 .main .services__button {
+  background: #DEC377;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  width: 200px;
+  height: 45px;
+  border: none;
+  border-radius: 2px;
+}
+
+.main .confidence {
+  margin-top: 100px;
+  padding: 80px 0 100px 0;
+}
+
+.main .confidence__card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 1060px;
+}
+
+.main .confidence__card .card__info {
+  width: 470px;
+}
+
+.main .confidence__card .card__info_description {
+  font-family: 'LatoRegular';
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 25px;
+  color: rgba(0, 0, 0, 0.8);
+  margin-top: 30px;
+}
+
+.main .confidence__card .card__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 440px;
+}
+
+.main .confidence__card .card__list_item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+  width: 440px;
+}
+
+.main .confidence__card .card__list_item:nth-child(n+2) {
+  margin-top: 25px;
+}
+
+.main .confidence__card .card__list_item p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 30px;
+  font-family: 'LatoRegular';
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 30px;
+  letter-spacing: 0.01em;
+  color: rgba(0, 0, 0, 0.75);
+}
+
+.main .confidence__card .card__list_item img {
+  height: 100%;
+}
+
+.main .confidence__line {
+  background: rgba(0, 0, 0, 0.1);
+  -webkit-transform: matrix(1, 0, 0, -1, 0, 0);
+          transform: matrix(1, 0, 0, -1, 0, 0);
+  height: 1px;
+  margin: 60px 0;
+}
+
+.main .our-advantages {
+  margin-top: 80px;
+}
+
+.main .our-advantages__card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 335px;
+  margin-top: 35px;
+}
+
+.main .our-advantages__card_item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 270px;
+  border-radius: 5px;
+  padding: 40px 20px;
+}
+
+.main .our-advantages__card_item .item__image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 120px;
+  height: 120px;
+  border: 3px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  margin-top: 10px;
+}
+
+.main .our-advantages__card_item .item__content {
+  text-align: center;
+  color: rgba(0, 0, 0, 0.75);
+  margin-top: 25px;
+  font-family: 'LatoRegular';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 25px;
+  letter-spacing: 0.02em;
+}
+
+.main .our-advantages__description {
+  position: relative;
+  font-family: 'LatoRegular';
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 25px;
+  color: rgba(0, 0, 0, 0.8);
+  margin-top: 40px;
+  padding: 40px 370px 45px 50px;
+}
+
+.main .our-advantages__description::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: 35px solid transparent;
+  border-top: 35px solid #DEC377;
+  border-right: 35px solid #DEC377;
+}
+
+.main .cooperation {
+  margin-top: 100px;
+}
+
+.main .cooperation__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main .cooperation__content {
+  width: 500px;
+}
+
+.main .cooperation__list {
+  margin: 35px 0;
+}
+
+.main .cooperation__list_item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main .cooperation__list_item .item__num {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #DEC377;
+  width: 70px;
+  height: 70px;
+  border: 1px solid rgba(222, 195, 119, 0.75);
+  border-radius: 50%;
+  font-family: Commissioner;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 67px;
+}
+
+.main .cooperation__list_item p {
+  font-family: 'LatoRegular';
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 25px;
+  color: rgba(0, 0, 0, 0.8);
+  font-weight: 600;
+  width: 400px;
+}
+
+.main .cooperation__description {
+  font-family: 'LatoRegular';
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 25px;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 14px;
+  letter-spacing: 0.01em;
+}
+
+.main .cooperation__form {
+  width: 570px;
+  padding: 40px 50px 50px 50px;
+}
+
+.main .cooperation__form form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 100%;
+}
+
+.main .cooperation__form form p {
+  font-family: Commissioner;
+  font-size: 13px;
+  line-height: 20px;
+  letter-spacing: 0.01em;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.main .cooperation__form form p:first-child {
+  font-weight: 600;
+}
+
+.main .cooperation__form form input {
+  font-family: 'LatoRegular';
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 25px;
+  color: rgba(0, 0, 0, 0.8);
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  height: 35px;
+  padding-left: 10px;
+  margin-bottom: 10px;
+}
+
+.main .cooperation__form form .cooperation__button {
+  background: #DEC377;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  width: 200px;
+  height: 45px;
+  border: none;
+  border-radius: 2px;
+  width: 100%;
+  margin-top: 25px;
+}
+
+.main .cooperation__form form .cooperation__condition {
+  font-family: 'LatoRegular';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 20px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.main .cooperation__form form .cooperation__condition a {
+  color: rgba(0, 0, 0, 0.5);
+  font-weight: 700;
+}
+
+.main .cost {
+  margin: 100px 0;
+}
+
+.main .cost__description {
+  font-family: 'LatoRegular';
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 25px;
+  color: rgba(0, 0, 0, 0.8);
+  width: 670px;
+  margin: 30px 0;
+}
+
+.main .cost__button {
   background: #DEC377;
   color: #FFFFFF;
   text-transform: uppercase;

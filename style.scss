@@ -3,6 +3,13 @@ $accent: #DEC377;
 $accent40: rgba(222, 195, 119, 0.4);
 $accent75: rgba(222, 195, 119, 0.75);
 
+@mixin comissioner-13 {
+    font-family: Commissioner;
+    font-size: 13px;
+    line-height: 20px;
+    letter-spacing: 0.01em;
+}
+
 @mixin comissioner-14 {
     font: {
         family: Commissioner;
@@ -74,7 +81,7 @@ h5 {
 
 @mixin main-text {
     font: {
-        family: Lato;
+        family: 'LatoRegular';
         size: 15px;
         style: normal;
         weight: 300;
@@ -85,7 +92,7 @@ h5 {
 
 @mixin button-text {
     font: {
-        family: Lato;
+        family: 'LatoRegular';
         size: 12px;
         style: normal;
         weight: 600;
@@ -258,7 +265,7 @@ body {
                 height: 50px;
 
                 font: {
-                    family: "Lato", sans-serif;
+                    family: 'LatoRegular';
                     size: 16px;
                     style: normal;
                     weight: 400;
@@ -651,6 +658,249 @@ body {
                 @include main-text();
                 width: 770px;
             }
+        }
+
+        &__button {
+            @include button();
+        }
+    }
+
+    .confidence {
+        margin-top: 100px;
+        padding: 80px 0 100px 0;
+
+        &__card {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 1060px;
+
+            .card__info {
+                width: 470px;
+
+                &_description {
+                    @include main-text();
+                    margin-top: 30px;
+                }
+            }
+
+            .card__list {
+                display: flex;
+                width: 440px;
+
+                &_item {
+                    display: flex;
+                    list-style-type: none;
+                    width: 440px;
+
+                    &:nth-child(n+2) {
+                        margin-top: 25px;
+                    }
+
+                    p {
+                        display: flex;
+                        align-items: center;
+                        margin-left: 30px;
+                        
+                        font: {
+                            family: 'LatoRegular';
+                            size: 17px;
+                            style: normal;
+                            weight: 600;
+                        }
+                        line-height: 30px;
+                        letter-spacing: 0.01em;
+                        color: rgba(0,0,0,0.75);
+                    }
+
+                    img {
+                        height: 100%;
+                    }
+                }
+            }
+        }
+
+        &__line {
+            background: rgba(0, 0, 0, 0.1);
+            transform: matrix(1, 0, 0, -1, 0, 0);
+            height: 1px;
+            margin: 60px 0;
+        }
+    }
+
+    .our-advantages {
+        margin-top: 80px;
+
+        &__card {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            height: 335px;
+            margin-top: 35px;
+
+            &_item {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 270px;
+                border-radius: 5px;
+                padding: 40px 20px;
+
+                .item__image {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 120px;
+                    height: 120px;
+                    border: 3px solid rgba(0, 0, 0, 0.1);
+                    border-radius: 50%;
+                    margin-top: 10px;
+                }
+
+                .item__content {
+                    text-align: center;
+                    color: rgba(0, 0, 0, 0.75);
+                    margin-top: 25px;
+
+                    font: {
+                        family: 'LatoRegular';
+                        size: 16px;
+                        style: normal;
+                        weight: 600;
+                    }
+                    line-height: 25px;
+                    letter-spacing: 0.02em;
+                }
+            }
+        }
+
+        &__description {
+            position: relative;
+            @include main-text();
+            margin-top: 40px;
+            padding: 40px 370px 45px 50px;
+
+            &::after {
+                content: ''; 
+                position: absolute;
+                top: 0;
+                right: 0;
+                border: 35px solid transparent; 
+                border-top: 35px solid $accent; 
+                border-right: 35px solid $accent;
+            }
+        }
+    }
+
+    .cooperation {
+        margin-top: 100px;
+
+        &__wrapper {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &__content {
+            width: 500px;
+        }
+
+        &__list {
+            margin: 35px 0;
+
+            &_item {
+                display: flex;
+                justify-content: space-between;
+
+                .item__num {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    color: $accent;
+                    width: 70px;
+                    height: 70px;
+                    border: 1px solid $accent75; 
+                    border-radius: 50%;
+
+                    font: {
+                        family: Commissioner;
+                        size: 22px;
+                        style: normal;
+                        weight: 800;
+                    }
+                    line-height: 67px;
+                }
+
+                p {
+                    @include main-text();
+                    font-weight: 600;
+                    width: 400px;
+                }
+            }
+        }
+
+        &__description {
+            @include main-text();
+            font-size: 14px;
+            letter-spacing: 0.01em;
+        }
+
+        &__form {
+            width: 570px;
+            padding: 40px 50px 50px 50px;
+
+            form {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                height: 100%;
+                
+                p {
+                    @include comissioner-13();
+                    color: rgba(0, 0, 0, 0.5);
+                    &:first-child {
+                        font-weight: 600;
+                    }
+                }
+
+                input {
+                    @include main-text();
+                    border: none;
+                    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+                    height: 35px;
+                    padding-left: 10px;
+                    margin-bottom: 10px;
+                }
+
+                .cooperation__button {
+                    @include button();
+                    width: 100%;
+                    margin-top: 25px;
+                }
+
+                .cooperation__condition {
+                    font-family: 'LatoRegular';
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 13px;
+                    line-height: 20px;
+                    color: rgba(0, 0, 0, 0.5);
+
+                    a {
+                        color: rgba(0, 0, 0, 0.5);
+                        font-weight: 700;
+                    }
+                }
+            }
+        }
+    }
+    
+    .cost {
+        margin: 100px 0;
+
+        &__description {
+            @include main-text();
+            width: 670px;
+            margin: 30px 0;
         }
 
         &__button {
