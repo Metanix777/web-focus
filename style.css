@@ -1205,6 +1205,18 @@ body {
   border-radius: 2px;
 }
 
+.footer .content {
+  width: 270px;
+}
+
+.footer .offices {
+  width: 670px;
+}
+
+.footer .hours {
+  width: 170px;
+}
+
 .wrapper {
   width: 1170px;
   margin: 0 auto;

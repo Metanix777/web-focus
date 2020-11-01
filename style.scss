@@ -196,6 +196,7 @@ body {
             position: absolute;
             height: 650px;
             top: 150px;
+            overflow: hidden;
             z-index: -1;
         }
 
@@ -908,6 +909,20 @@ body {
         }
     }
 
+}
+
+.footer {
+    .content {
+        width: 270px;
+    }
+
+    .offices {
+        width: 670px;
+    }
+
+    .hours {
+        width: 170px;
+    }
 }
 
 
