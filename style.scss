@@ -90,6 +90,16 @@ h5 {
     color: rgba(0, 0, 0, 0.8);
 }
 
+@mixin additional-text{
+    font: {
+        family: 'LatoRegular';
+        size: 13px;
+        style: normal;
+        weight: 300;
+    }
+    line-height: 20px;
+}
+
 @mixin button-text {
     font: {
         family: 'LatoRegular';
@@ -123,7 +133,6 @@ h5 {
 body {
     background: #E5E5E5;
     width: 1920px;
-    margin: 0 auto;
 }
 
 .header {
@@ -195,6 +204,7 @@ body {
         &__slider {
             position: absolute;
             height: 650px;
+            width: 100%;
             top: 150px;
             overflow: hidden;
             z-index: -1;
@@ -912,16 +922,73 @@ body {
 }
 
 .footer {
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    padding-top: 50px;
+
+    .wrapper {
+        display: flex;
+    }
+
     .content {
         width: 270px;
+
+        &__info {
+            margin: 70px 0 60px;
+
+            p {
+                @include additional-text();
+
+                span {
+                    @include comissioner-13();
+                    font-weight: 500;
+                }
+            }
+        }
+
+        &__networks {
+            display: flex;
+            justify-content: space-between;
+            width: 255px;
+        }
     }
 
     .offices {
+        display: flex;
+        flex-direction: column;
         width: 670px;
+        margin-top: 35px;
+
+        &__title {
+            @include main-text();
+            font-weight: 400;
+            text-transform: uppercase;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+            padding-bottom: 5px;
+        }
+
+        &__info {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 30px;
+
+            .office__city {
+                margin-bottom: 35px;
+                &_title {
+                    text-transform: uppercase;
+                    font-family: Commissioner;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 25px;
+                    letter-spacing: 0.04em;
+                }
+            }
+        }
     }
 
     .hours {
         width: 170px;
+        margin-top: 35px;
     }
 }
 
