@@ -53,16 +53,36 @@
     <main class="main">
         <section class="main-screen">
             <div class="main-screen__slider">
-                <img src="assets/images/main-screen1.png" alt="screen1">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
+                <img class="slide_item slide_active" src="assets/images/main-screen1.png" alt="screen1">
+                <img class="slide_item" src="assets/images/main-screen2.png" alt="screen2">
+                <img class="slide_item" src="assets/images/main-screen3.png" alt="screen3">
+                <img class="slide_item" src="assets/images/main-screen4.png" alt="screen4">
+                <img class="slide_item" src="assets/images/main-screen5.png" alt="screen5">
             </div>
             <div class="wrapper">
-                <div class="main-screen__content">
+                <div class="main-screen__content slide_active">
                     <h1 class="main-screen__title">Взыскание дебиторской задолженности</h1>
                     <div class="main-screen__subtitle">Индивидуальный подход и нацеленность на достижение результата</div>
+                    <button class="main-screen__button">Подробнее</button>
+                </div>
+                <div class="main-screen__content">
+                    <h1 class="main-screen__title">Юридический аутсорсинг</h1>
+                    <div class="main-screen__subtitle">Гарантия своевременности и качества услуг</div>
+                    <button class="main-screen__button">Подробнее</button>
+                </div>
+                <div class="main-screen__content">
+                    <h1 class="main-screen__title">Юридическая консультация</h1>
+                    <div class="main-screen__subtitle">Детальные разъяснения вопросов по ведению бизнеса от профессионалов</div>
+                    <button class="main-screen__button">Подробнее</button>
+                </div>
+                <div class="main-screen__content">
+                    <h1 class="main-screen__title">Ликвидация предприятия</h1>
+                    <div class="main-screen__subtitle">Эффективное решение сложных задач</div>
+                    <button class="main-screen__button">Подробнее</button>
+                </div>
+                <div class="main-screen__content">
+                    <h1 class="main-screen__title">Регистрация ООО</h1>
+                    <div class="main-screen__subtitle">Гарантируем минимальные сроки регистрации под ключ</div>
                     <button class="main-screen__button">Подробнее</button>
                 </div>
                 <div class="arrows">
@@ -219,8 +239,12 @@
                             <p>Быстрота анализа и профессиональных действий наших юристов обеспечивают успешное решение, казалось бы, неразрешимых вопросов. Богатые знания и солидный опыт позволяют нам оказывать комплексную правовую помощь в ситуациях любой сложности.</p>
                         </div>
                     </div>
-                    <div class="direction-principles__image">
-                        <img src="assets/images/direction-screen1.png" alt="direction-screen1">
+                    <div class="direction-principles__slider">
+                        <img class="slide_item slide_active" src="assets/images/direction-screen1.png" alt="direction-screen1">
+                        <img class="slide_item" src="assets/images/direction-screen2.png" alt="direction-screen2">
+                        <img class="slide_item" src="assets/images/direction-screen3.png" alt="direction-screen3">
+                        <img class="slide_item" src="assets/images/direction-screen4.png" alt="direction-screen4">
+                        <img class="slide_item" src="assets/images/direction-screen5.png" alt="direction-screen5">
                     </div>
                 </div>
                 <div class="direction-principles__arrow">
@@ -556,58 +580,58 @@
             <div class="offices">
                 <div class="offices__title">Наши офисы</div>
                 <div class="offices__info">
-                    <div class="offices__info_column">
+                    <div class="office__info_column">
                         <div class="office__city">
                             <div class="office__city_title">Контакты в Минске</div>
-                            <div class="office__city_contact">
+                            <div class="office__city_contact information">
                                 <p>+375 (44) 755-01-01</p>
                                 <p>+375 (29) 550-01-01</p>
                                 <p>+375 (17) 374-40-60</p>
                             </div>
                             <div class="office__city_addres">
-                                <p>Адрес</p>
-                                <p class="city__content">г. Минск, ул. Широкая, д. 3, пом. 146, оф. 4</p>
+                                <p class="heading">Адрес</p>
+                                <p class="information">г. Минск, ул. Широкая, д. 3, пом. 146, оф. 4</p>
                             </div>
                             <div class="office__city_addres">
-                                <p>Телефон для связи резидентов Российской Федерации</p>
-                                <p class="city__content">whatsapp +7 (989) 166 24 00</p>
-                                <p class="city__email">info@jurisprudent.by</p>
+                                <p class="heading">Телефон для связи резидентов Российской Федерации</p>
+                                <p class="information">whatsapp +7 (989) 166 24 00</p>
+                                <p class="email">info@jurisprudent.by</p>
                             </div>
                         </div>
                     </div>
                     <div class="office__info_column">
                         <div class="office__city">
                             <div class="office__city_title">Отдел в Могилеве</div>
-                            <p>Адрес</p>
-                            <p class="city__content">г. Могилев, ул. Космонавтов, д. 19, оф. 507</p>
-                            <p class="city__email">mogilev@jurisprudent.by</p>
+                            <p class="heading">Адрес</p>
+                            <p class="information">г. Могилев, ул. Космонавтов, д. 19, оф. 507</p>
+                            <p class="email">mogilev@jurisprudent.by</p>
                         </div>
                         <div class="office__city">
                             <div class="office__city_title">Отдел в Бресте</div>
-                            <p>Адрес</p>
-                            <p class="city__content">г. Брест, б-р Шевченко, д. 4, оф. 401</p>
-                            <p class="city__email">brest@jurisprudent.by</p>
+                            <p class="heading">Адрес</p>
+                            <p class="information">г. Брест, б-р Шевченко, д. 4, оф. 401</p>
+                            <p class="email">brest@jurisprudent.by</p>
                         </div>
                         <div class="office__city">
                             <div class="office__city_title">Отдел в Витебске</div>
-                            <p>Адрес</p>
-                            <p class="city__content">г. Витебск, ул.Гоголя, д. 14, оф. 614</p>
-                            <p class="city__email">vitebsk@jurisprudent.by</p>
+                            <p class="heading">Адрес</p>
+                            <p class="information">г. Витебск, ул.Гоголя, д. 14, оф. 614</p>
+                            <p class="email">vitebsk@jurisprudent.by</p>
                         </div>
                     </div>
 
                     <div class="office__info_column">
                         <div class="office__city">
                             <div class="office__city_title">Отдел в Гродно</div>
-                            <p>Адрес</p>
-                            <p class="city__content">г. Гродно, ул. Карла Маркса, д. 31-1, оф. 1010</p>
-                            <p class="city__email">grodno@jurisprudent.by</p>
+                            <p class="heading">Адрес</p>
+                            <p class="information">г. Гродно, ул. Карла Маркса, д. 31-1, оф. 1010</p>
+                            <p class="email">grodno@jurisprudent.by</p>
                         </div>
                         <div class="office__city">
                             <div class="office__city_title">Отдел в Гомеле</div>
-                            <p>Адрес</p>
-                            <p class="city__content">г. Гомель, пр. Ленина, д. 10, оф. 901</p>
-                            <p class="city__email">gomel@jurisprudent.by</p>
+                            <p class="heading">Адрес</p>
+                            <p class="information">г. Гомель, пр. Ленина, д. 10, оф. 901</p>
+                            <p class="email">gomel@jurisprudent.by</p>
                         </div>
                     </div>
                 </div>
@@ -615,20 +639,20 @@
             <div class="hours">
                 <div class="hours__title">Время работы</div>
                 <div class="hours__info">
-                    <p>Прием посетителей</p>
-                    <p class="hours__content">Ежедневно с 8.00 до 19.00 Выходной: суббота - воскресенье.</p>
+                    <p class="heading">Прием посетителей</p>
+                    <p class="information">Ежедневно с 8.00 до 19.00 Выходной: суббота - воскресенье.</p>
                 </div>
                 <div class="hours__info">
-                    <p>Прием звонков</p>
-                    <p class="hours__content">Ежедневно с 8.00 до 22.00 Без выходных</p>
+                    <p class="heading">Прием звонков</p>
+                    <p class="information">Ежедневно с 8.00 до 22.00 Без выходных</p>
                 </div>
                 <div class="hours__info">
-                    <p>Онлайн консультант</p>
-                    <p class="hours__content">Круглосуточно 24/7 Без выходных</p>
+                    <p class="heading">Онлайн консультант</p>
+                    <p class="information">Круглосуточно 24/7 Без выходных</p>
                 </div>
             </div>
         </div>
     </footer>
-    
+    <script src="script.js"></script>
 </body>
 </html>

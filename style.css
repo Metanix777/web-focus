@@ -149,16 +149,24 @@ body {
 .main-screen__slider {
   position: absolute;
   height: 650px;
-  width: 100%;
+  width: 1920px;
   top: 150px;
   overflow: hidden;
   z-index: -1;
 }
 
+.main-screen .slide_item {
+  display: none;
+}
+
+.main-screen .slide_item.slide_active {
+  display: block;
+  -webkit-animation: 0.5s linear slideNext;
+          animation: 0.5s linear slideNext;
+}
+
 .main-screen__content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -169,6 +177,14 @@ body {
   width: 500px;
   height: 240px;
   margin-top: 160px;
+}
+
+.main-screen__content.slide_active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-animation: 0.5s linear slideNext;
+          animation: 0.5s linear slideNext;
 }
 
 .main-screen__title {
@@ -441,8 +457,18 @@ body {
   height: 200px;
 }
 
-.main .direction-principles__image {
+.main .direction-principles__slider {
   margin-top: 60px;
+}
+
+.main .direction-principles__slider .slide_item {
+  display: none;
+}
+
+.main .direction-principles__slider .slide_item.slide_active {
+  display: block;
+  -webkit-animation: 0.5s linear slideNext;
+          animation: 0.5s linear slideNext;
 }
 
 .main .direction-principles__arrow {
@@ -1225,14 +1251,6 @@ body {
   margin: 70px 0 60px;
 }
 
-.footer .content__info p {
-  font-family: 'LatoRegular';
-  font-size: 13px;
-  font-style: normal;
-  font-weight: 300;
-  line-height: 20px;
-}
-
 .footer .content__info p span {
   font-family: Commissioner;
   font-size: 13px;
@@ -1291,6 +1309,7 @@ body {
 }
 
 .footer .offices__info .office__city_title {
+  color: rgba(0, 0, 0, 0.75);
   text-transform: uppercase;
   font-family: Commissioner;
   font-size: 14px;
@@ -1300,9 +1319,44 @@ body {
   letter-spacing: 0.04em;
 }
 
+.footer .offices__info .office__city_contact {
+  margin: 20px 0 10px;
+}
+
+.footer .offices .office__info_column {
+  width: 200px;
+}
+
 .footer .hours {
   width: 170px;
   margin-top: 35px;
+}
+
+.footer .heading {
+  font-family: Commissioner;
+  font-size: 13px;
+  line-height: 20px;
+  letter-spacing: 0.01em;
+  font-weight: 500;
+  margin-top: 10px;
+}
+
+.footer .information {
+  font-family: 'LatoRegular';
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 20px;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.footer .email {
+  font-family: Commissioner;
+  font-size: 13px;
+  line-height: 20px;
+  letter-spacing: 0.01em;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.8);
 }
 
 .wrapper {
@@ -1314,5 +1368,23 @@ body {
   background: #FFFFFF;
   -webkit-box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.3);
           box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.3);
+}
+
+@-webkit-keyframes slideNext {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slideNext {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 /*# sourceMappingURL=style.css.map */
